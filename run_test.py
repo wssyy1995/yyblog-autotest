@@ -3,7 +3,7 @@ import time
 import unittest,random,sys,os
 sys.path.append(os.getcwd()+'/test_main/models')
 sys.path.append(os.getcwd()+'/test_main/page_obj')
-print(sys.path)
+
 test_dir='./test_main/test_case'
 discover=unittest.defaultTestLoader.discover(start_dir=test_dir,pattern='test*.py')
 # runner=unittest.TextTestRunner()

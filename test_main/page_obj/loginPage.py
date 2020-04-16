@@ -1,4 +1,4 @@
-# 为login页面编写页面对象，对用户登录页面上的用户名/密码输入框，登录按钮和提示信息等元素进行封装
+# 为login页面编写页面对象，对用户登录页面上的用户名/密码输入框，登录按钮和提示信息的行为进行封装
 import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -7,7 +7,7 @@ from base import Page
 class Login(Page):
     url='/auth/login?next=%2F%3F'
 
-    # action
+    # 单个元素的action
     def input_username(self,username):
         self.driver.find_element(By.ID,'username').send_keys(username)
 
@@ -17,7 +17,7 @@ class Login(Page):
     def login_submit(self):
         self.driver.find_element(By.ID,'submit').click()
 
-    #集合一整套action
+    #整合了登录的整个流程的方法
     def user_login(self,username='test',password='1234'):
         self.open()
         self.input_username(username)
