@@ -4,7 +4,7 @@ sys.path.append(os.path.dirname(os.getcwd())+'/models')
 sys.path.append(os.path.dirname(os.getcwd())+'/page_obj')
 import myunit,function
 from loginPage import Login
-from logger import Log
+
 
 # login测试类
 class loginTest(myunit.MyTest):

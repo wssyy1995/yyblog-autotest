@@ -2,7 +2,6 @@
 # 为每个网页页面的元素和操作方法集合到一个页面类中，base是每个页面都需要有的方法和元素
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-
 import time
 
 class Page:

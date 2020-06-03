@@ -6,7 +6,7 @@ from selenium.webdriver.chrome.options import Options
 
 def browser():
     chrome_options = Options()
-    # 禁止弹窗
+    # 禁止浏览器系统的消息弹窗notification
     prefs = {
         'profile.default_content_setting_values':
             {
